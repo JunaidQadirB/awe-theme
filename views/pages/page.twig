@@ -1,0 +1,7 @@
+{% extends 'layouts/base.twig' %}
+{% block content %}
+    <div class="blog-post">
+        <h2 class="blog-post-title mb-3">{{ post.title }}</h2>
+        {{ post.content | shortcodes }}
+    </div>
+{% endblock %}

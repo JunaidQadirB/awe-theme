@@ -1,0 +1,7 @@
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-center">
+        {% for menuItem in menu.get_items %}
+            <a class="p-2 text-muted" href="{{ menuItem.link }}">{{ menuItem.title }}</a>
+        {% endfor %}
+    </nav>
+</div>

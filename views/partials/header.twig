@@ -1,0 +1,19 @@
+{#header.twig#}
+<header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class=" col-sm-12 col-md-4 pt-1">
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+            <a class="blog-header-logo text-dark" href="{{ site.link }}">{{ site.name }}</a>
+        </div>
+        <div class=" col-sm-12 col-md-4 d-flex justify-content-end align-items-center">
+            <form class="form-inline" method="get" action="/">
+                <div class="form-group">
+                    <label for=""></label>
+                    <input type="search"
+                           name="s" id="" class="form-control form-control-sm" placeholder="Enter your search">
+                </div>
+            </form>
+        </div>
+    </div>
+</header>

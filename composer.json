@@ -1,0 +1,8 @@
+{
+    "name": "your-vendor/awe-theme",
+    "type": "wordpress-theme",
+    "require": {
+        "timber/timber": "*"
+    },
+    "license": "MIT"
+}
