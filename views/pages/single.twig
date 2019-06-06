@@ -1,6 +1,12 @@
 {% extends 'layouts/base.twig' %}
 {% block content %}
     <div class="blog-post">
+        {% if post.thumbnail.src %}
+            <div style="height: 250px;overflow: hidden" class="d-flex justify-content-center justify-items-center">
+                <img style="object-fit: cover;width:100%;" class="card-img-right justify-content-center align-self-center text-center" src="{{ post.thumbnail.src }}"
+                     alt="{{ post.title }}"/>
+            </div>
+        {% endif %}
         <h2 class="blog-post-title">{{ post.title }}</h2>
         <p class="blog-post-meta">January 1, 2014 by <a href="{{post.author.link}}">{{post.author.name}}</a></p>
         {{ post.content | shortcodes }}

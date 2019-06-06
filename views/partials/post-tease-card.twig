@@ -14,6 +14,9 @@
         </div>
         <a href="{{ post.link }}">Continue reading</a>
     </div>
-    <img class="card-img-right flex-auto d-none d-lg-block" src="holder.js/200x250?theme=thumb"
-         alt="Card image cap"/>
+    {% if post.thumbnail.src %}
+            <img style="object-fit: cover" class="flex-auto d-none d-lg-inline w-50" src="{{ post.thumbnail.src }}"
+                 alt="{{ post.title }}"/>
+
+    {% endif %}
 </div>
