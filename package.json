@@ -15,7 +15,7 @@
     "bootstrap": "^4.1.0",
     "browser-sync": "^2.23.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "laravel-mix": "^2.1.11",
     "popover.js": "^0.2.34"
   }
